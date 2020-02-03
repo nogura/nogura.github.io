@@ -1,0 +1,37 @@
+// TOP MENU
+.topMenu  {
+	$fontSize: 13px;
+    background-color: #333;
+    font-size: $fontSize;
+    line-height: $fontSize;
+
+    a {
+	    color: #fff;
+
+	    i {
+	    	margin-right: 2px;
+	    }
+
+	    &:hover {
+	    	color: lighten($mainColor, 20%);
+	    }
+    }
+
+    .social {
+		margin-left: auto;
+    	order: 2;
+    }
+}
+
+// HEADER
+.mainMenu {
+	background-color: #F8F8F8 !important;
+
+	img {
+		width: 100px;	
+	}
+
+	.navbar-collapse {
+		flex-grow: 0;
+	}
+}
