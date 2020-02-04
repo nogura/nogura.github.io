@@ -12,7 +12,7 @@
 
 <nav class="mainMenu navbar navbar-expand-lg navbar-light bg-light">
 	<div class="container">
-		<a class="navbar-brand" href="/">
+		<a class="navbar-brand" href="/{{ page.lang }}">
 			<img src="{{ BASE_PATH }}/assets/logo.jpg" alt="Nogura logo" />
 		</a>
 		<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
@@ -22,7 +22,7 @@
 		<div class="collapse navbar-collapse" id="navbarSupportedContent">
 			<ul class="navbar-nav mr-auto">
 				<li class="nav-item">
-					<a class="nav-link" href="#">Our team</a>
+					<a class="nav-link" href="/{{ page.lang }}/our-team">{{ site.data.i18n.[page.lang].our_team }}</a>
 				</li>
 				<li class="nav-item dropdown">
 					<a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
@@ -37,5 +37,15 @@
 				</li>
 			</ul>
 		</div>
+		<ul style="border: solid red 1px;">
+			{% assign pages=site.pages | where:"ref", page.ref | sort: 'lang' %}
+			{% for page in pages %}
+				{% if page.lang %}
+					<li>
+						<a href="{{ page.url }}" class="{{ page.lang }}">{{ page.lang }}</a>
+					</li>
+				{% endif %}
+			{% endfor %}
+		</ul>
 	</div>
 </nav>
