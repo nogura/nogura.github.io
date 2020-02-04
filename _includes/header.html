@@ -1,51 +1,57 @@
-<nav class="topMenu nav">
-	<a href="https://www.google.com/maps/place/Carrer+del+Rossell%C3%B3,+154,+08036+Barcelona/@41.3911261,2.1526778,17z/data=!3m1!4b1!4m5!3m4!1s0x12a4a29000064df1:0x717a50f5aa13339f!8m2!3d41.3911261!4d2.1548665" target="_blank" class="nav-link"><i class="icon-location"></i>Carrer del Rosselló 154, Barcelona</a>
-  	<a href="mailto:{{ site.email }}" class="nav-link"><i class="icon-mail"></i>{{ site.email }}</a>
-  	
-  	{% if site.social %}
-	  	<div class="social">
-			{% if site.social.facebook %}<a href="https://www.facebook.com/{{ site.social.facebook }}/" target="_blank" class="nav-link float-right"><i class="icon-facebook"></i></a>{% endif %}
-			{% if site.social.instagram %}<a href="https://www.instagram.com/{{ site.social.instagram }}/" target="_blank" class="nav-link float-right"><i class="icon-instagram"></i></a>{% endif %}       
-		</div>                     
-  	{% endif %}
-</nav>
+<header class="fixed-top">
+	<nav class="topMenu nav">
+		<!--<a href="https://www.google.com/maps/place/Carrer+del+Rossell%C3%B3,+154,+08036+Barcelona/@41.3911261,2.1526778,17z/data=!3m1!4b1!4m5!3m4!1s0x12a4a29000064df1:0x717a50f5aa13339f!8m2!3d41.3911261!4d2.1548665" target="_blank" class="nav-link"><i class="icon-location"></i>Carrer del Rosselló 154, Barcelona</a>
+	  	<a href="mailto:{{ site.email }}" class="nav-link"><i class="icon-mail"></i>{{ site.email }}</a>-->
+	  	
+	  	{% if site.social %}
+		  	<div class="social">
+				{% if site.social.facebook %}<a href="https://www.facebook.com/{{ site.social.facebook }}/" target="_blank" class="nav-link float-left"><i class="icon-facebook"></i></a>{% endif %}
+				{% if site.social.instagram %}<a href="https://www.instagram.com/{{ site.social.instagram }}/" target="_blank" class="nav-link float-left"><i class="icon-instagram"></i></a>{% endif %}       
+			</div>                     
+	  	{% endif %}
 
-<nav class="mainMenu navbar navbar-expand-lg navbar-light bg-light">
-	<div class="container">
-		<a class="navbar-brand" href="/{{ page.lang }}">
-			<img src="{{ BASE_PATH }}/assets/logo.jpg" alt="Nogura logo" />
-		</a>
-		<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-			<span class="navbar-toggler-icon"></span>
-		</button>
-
-		<div class="collapse navbar-collapse" id="navbarSupportedContent">
-			<ul class="navbar-nav mr-auto">
-				<li class="nav-item">
-					<a class="nav-link" href="/{{ page.lang }}/our-team">{{ site.data.i18n.[page.lang].our_team }}</a>
-				</li>
-				<li class="nav-item dropdown">
-					<a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-						Dropdown
-					</a>
-					<div class="dropdown-menu" aria-labelledby="navbarDropdown">
-						<a class="dropdown-item" href="#">Action</a>
-						<a class="dropdown-item" href="#">Another action</a>
-						<div class="dropdown-divider"></div>
-						<a class="dropdown-item" href="#">Something else here</a>
-					</div>
-				</li>
-			</ul>
-		</div>
-		<ul style="border: solid red 1px;">
-			{% assign pages=site.pages | where:"ref", page.ref | sort: 'lang' %}
+	  	<div class="languages">
+		  	{% assign pages=site.pages | where:"ref", page.ref | sort: 'lang' %}
 			{% for page in pages %}
 				{% if page.lang %}
-					<li>
-						<a href="{{ page.url }}" class="{{ page.lang }}">{{ page.lang }}</a>
-					</li>
+					<a href="{{ page.url }}" class="nav-link {{ page.lang }}">{{ page.lang }}</a>
 				{% endif %}
 			{% endfor %}
-		</ul>
-	</div>
-</nav>
+		</div>
+	</nav>
+
+	<nav class="mainMenu navbar navbar-expand-lg navbar-light bg-light">
+		<div class="container">
+			<a class="navbar-brand" href="/{{ page.lang }}">
+				<img src="{{ BASE_PATH }}/assets/images/logo.png" class="mainLogo" alt="Nogura logo" />
+				<img src="{{ BASE_PATH }}/assets/images/logo_letters.png" class="alterLogo" alt="Nogura logo" />
+			</a>
+			<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+				<span class="navbar-toggler-icon"></span>
+			</button>
+
+			<div class="collapse navbar-collapse" id="navbarSupportedContent">
+				<ul class="navbar-nav mr-auto">
+					{% for link in layout.menu %}
+						<li class="nav-item">
+							{% capture linkUrl %}/{{ page.lang }}/{{ link }}{% endcapture %}
+							<a class="nav-link {% if linkUrl == page.url %}active{% endif %}" href="/{{ page.lang }}/{{ link }}">{{ site.data.i18n.[page.lang].[link] }}</a>
+						</li>
+					{% endfor %}
+					
+					<li class="nav-item dropdown">
+						<a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+							Dropdown
+						</a>
+						<div class="dropdown-menu" aria-labelledby="navbarDropdown">
+							<a class="dropdown-item" href="#">Action</a>
+							<a class="dropdown-item" href="#">Another action</a>
+							<div class="dropdown-divider"></div>
+							<a class="dropdown-item" href="#">Something else here</a>
+						</div>
+					</li>
+				</ul>
+			</div>
+		</div>
+	</nav>
+</header>
