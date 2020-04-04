@@ -23,8 +23,8 @@
 	<nav class="mainMenu navbar navbar-expand-lg navbar-light bg-light">
 		<div class="container">
 			<a class="navbar-brand" href="/{{ page.lang }}">
-				<img src="{{ BASE_PATH }}/assets/images/logo.png" class="mainLogo" alt="Nogura logo" />
-				<img src="{{ BASE_PATH }}/assets/images/logo_letters.png" class="alterLogo" alt="Nogura logo" />
+				<img src="{{ BASE_PATH }}/assets/images/logo.png" class="mainLogo d-none d-lg-block" alt="Nogura logo" />
+				<img src="{{ BASE_PATH }}/assets/images/logo_letters.png" class="alterLogo d-lg-none" alt="Nogura logo" />
 			</a>
 			<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
 				<span class="navbar-toggler-icon"></span>
@@ -35,21 +35,11 @@
 					{% for link in layout.menu %}
 						<li class="nav-item">
 							{% capture linkUrl %}/{{ page.lang }}/{{ link }}{% endcapture %}
-							<a class="nav-link {% if linkUrl == page.url %}active{% endif %}" href="/{{ page.lang }}/{{ link }}">{{ site.data.i18n.[page.lang].[link] }}</a>
+							<a class="nav-link {% if linkUrl == page.url %}active{% endif %}" href="/{{ page.lang }}/{{ link }}">
+								<span>{{ site.data.i18n.[page.lang].[link] }}</span>
+							</a>
 						</li>
 					{% endfor %}
-					
-					<li class="nav-item dropdown">
-						<a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-							Dropdown
-						</a>
-						<div class="dropdown-menu" aria-labelledby="navbarDropdown">
-							<a class="dropdown-item" href="#">Action</a>
-							<a class="dropdown-item" href="#">Another action</a>
-							<div class="dropdown-divider"></div>
-							<a class="dropdown-item" href="#">Something else here</a>
-						</div>
-					</li>
 				</ul>
 			</div>
 		</div>

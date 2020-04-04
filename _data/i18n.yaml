@@ -2,8 +2,19 @@ en:
     team: The team
     menu: The menu
     restaurant: The restaurant
+    reservations: Reservations
+    contact: Contact
 
 ca:
     team: L'equip
     menu: La carta
     restaurant: El restaurant
+    reservations: Reserva
+    contact: Contacta
+
+es:
+    team: El equipo
+    menu: La carta
+    restaurant: El restaurante
+    reservations: Reserva
+    contact: Contacta

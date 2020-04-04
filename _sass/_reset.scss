@@ -1,4 +1,40 @@
 body {
-	font-family: 'Cambay', sans-serif;
+	font-family: 'Montserrat', sans-serif;
 	transition: padding ease .3s;
+}
+
+label {
+	text-transform: uppercase;
+}
+
+.form-control {
+	border-radius: 0;
+    border: 0;
+    background-color: #f2f2f2;
+}
+
+.text-muted {
+	color: inherit !important;
+}
+
+.btn-primary {
+	border-radius: 0;
+    width: 100%;
+    padding: 15px;
+	text-transform: uppercase;
+	border: 0;
+	color: #fff;
+	background-color: #4F1510;
+
+	&:hover,
+	&:focus,
+	&:active {
+		background-color: darken(#4F1510, 5%);
+	}
+}
+
+.alert {
+	width: 100%;
+	border-radius: 0;
+	border: 0;
 }

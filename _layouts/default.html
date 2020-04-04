@@ -2,6 +2,9 @@
 menu:
   - team
   - menu
+  - restaurant
+  - reservations
+  - contact
 ---
 
 <!DOCTYPE html>
@@ -14,12 +17,14 @@ menu:
 </head>
 <body class="d-flex flex-column h-100">
 
+	{% include scripts.html %}
+
 	{% include header.html %}
 
-	{{ content }}
+	<main>
+		{{ content }}
+	</main>
 
 	{% include footer.html %}
-
-	{% include scripts.html %}
 </body>
 </html>
