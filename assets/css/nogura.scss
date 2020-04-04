@@ -1,11 +1,14 @@
 ---
 ---
 
+/*
+Theme Name: Nogura template
+Description: Custom Jekyll template for the Nogura project
+Author: Natalia Rio
+Author URI: https://www.linkedin.com/in/natalia-sm/
+Tags: Jekyll, Website, Restaurant, Nogura
+*/
 
-@import "var";
-@import "reset";
-@import "typography";
-
+@import "base";
+@import "components";
 @import "layout";
-@import "header";
-@import "footer";

@@ -1,0 +1,19 @@
+/// Block to contain any kind of content on the website, with needed spacing
+.content {
+    margin: 20px 0;
+    text-align: justify;
+
+    &--bgcolor {
+        padding: 30px 50px;
+		background-color: $color-second;
+    	color: $color-off;
+    }
+    
+    @media (min-width: 992px) {
+	    padding: 0 50px 30px 15px;
+
+        &--bgcolor {
+            padding: 30px 50px;
+        }
+	}
+}

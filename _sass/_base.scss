@@ -1,0 +1,71 @@
+// === Typography === //
+@import url('https://fonts.googleapis.com/css?family=Montserrat:400,400i,500,500i&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Martel:wght@300;400;500;700&display=swap');
+
+$font-weight-normal: 400;
+$font-weight-bold: 500;
+
+
+// === Colors === //
+$color-main: #CF3729;
+$color-second: #6B503F;
+$color-third: #4F1510;
+$color-off: #f2f2f2;
+$color-black: darken($color-off, 75%);
+
+
+// === Resets === //
+body {
+    color: $color-second;
+	font-family: 'Montserrat', sans-serif;
+}
+
+h1, h2, h3, h4, h5, h6 {
+	font-family: Martel, serif;
+}
+
+h1 {
+    font-size: 30px;
+    margin-bottom: 20px;
+}
+
+label {
+	text-transform: uppercase;
+}
+
+.alert {
+	border: 0;
+	border-radius: 0;
+	width: 100%;
+}
+
+.btn-primary {
+	background-color: $color-third;
+	border: 0;
+	border-radius: 0;
+	color: $color-off;
+    padding: 15px;
+	text-transform: uppercase;
+    width: 100%;
+
+	&:active,
+	&:focus,
+	&:hover {
+		background-color: darken($color-third, 5%);
+	}
+}
+
+.form-control {
+    background-color: $color-off;
+    border: 0;
+	border-radius: 0;
+}
+
+// Menu options on the right
+.navbar-collapse {
+	flex-grow: 0;
+}
+
+.text-muted {
+	color: inherit !important;
+}

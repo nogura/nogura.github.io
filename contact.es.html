@@ -1,51 +1,17 @@
 ---
-layout: default_boxed
 permalink: /es/contact
 
 lang: es
 ref: contact
 ---
 
-<div class="col-sm-6 noguraBox">
-	<p>¡Bienvenido! Muchas gracias por su interés en nuestro restaurante.</p>
-	<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
-</div>
-<div class="col-sm-6 noguraBox primary"> 
-	<h1 class="text-center">¿Qué necesitas?</h1>
-	
-	<form id="contactForm">
-		<div class="form-group">
-			<label for="contactName">Nombre</label>
-			<input type="text" class="form-control" id="contactName" name="contactName">
-		</div>
-		<div class="form-group">
-			<label for="contactEmail">Email</label>
-			<input type="email" class="form-control" id="contactEmail" aria-describedby="emailHelp" name="contactEmail">
-			<small id="emailHelp" class="form-text text-muted">Nunca compartiremos su correo electrónico con nadie más.</small>
-		</div>
-		<div class="form-group">
-			<label for="contactMessage">Mensaje</label>
-			<textarea class="form-control" id="contactMessage" name="contactMessage" rows="3"></textarea>
-		</div>
-		<div class="form-group">
-			<button type="submit" class="btn btn-primary">Enviar</button>
-		</div>
-	</form>
-</div>
-
-<div class="offset-sm-6 col-sm-6">
+<div class="col-lg-6">
 	<div class="row">
-		<div class="alert alert-success" role="alert" style="display: none;">
-		 	Tu correo electrónico fue enviado con éxito
+		<div class="content">
+			<p>¡Bienvenido! Muchas gracias por su interés en nuestro restaurante.</p>
+			<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
 		</div>
-	</div>		
+	</div>
 </div>
 
-<script type="text/javascript">
-	jQuery(function($) {
-		$("#contactForm").on("submit", function(e) {
-			e.preventDefault();
-			$(".alert.alert-success").show();
-		});
-	});
-</script>
+{% include contact__form.html %}

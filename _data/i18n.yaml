@@ -1,20 +1,41 @@
 en:
-    team: The team
-    menu: The menu
-    restaurant: The restaurant
-    reservations: Reservations
     contact: Contact
+    email: Email
+    menu: The menu
+    message: Message
+    name: Name
+    reservations: Reservations
+    restaurant: The restaurant
+    send: Send
+    team: The team
+    We'll never share your email with anyone else.: We'll never share your email with anyone else.
+    What do you need?: What do you need?
+    Your email was sent successfully: Your email was sent successfully
 
 ca:
-    team: L'equip
-    menu: La carta
-    restaurant: El restaurant
-    reservations: Reserva
     contact: Contacta
+    email: Email
+    menu: La carta
+    message: Missatge
+    name: Nom
+    reservations: Reserva
+    restaurant: El restaurant
+    send: Enviar
+    team: L'equip
+    We'll never share your email with anyone else.: Mai compartirem el correu electrònic amb ningú més.
+    What do you need?: Què necessites?
+    Your email was sent successfully: El vostre correu electrònic s'ha enviat correctament
 
 es:
-    team: El equipo
-    menu: La carta
-    restaurant: El restaurante
-    reservations: Reserva
     contact: Contacta
+    email: Email
+    menu: La carta
+    message: Mensaje
+    name: Nombre
+    reservations: Reserva
+    restaurant: El restaurante
+    send: Enviar
+    team: El equipo
+    We'll never share your email with anyone else.: Nunca compartiremos su correo electrónico con nadie más.
+    What do you need?: ¿Qué necesitas?
+    Your email was sent successfully: Tu correo electrónico fue enviado con éxito

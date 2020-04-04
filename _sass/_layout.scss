@@ -1,57 +1,93 @@
-.noguraBox {
-    margin: 20px 0;
-    color: #6B503F;
-    text-align: justify;
+// === Header: top === //
+header .nav  {
+	$font-size: 13px;
+	background-color: $color-black;
+	font-size: $font-size;
+	line-height: $font-size;
 
-    &.primary {
-		background-color: #6B503F;
-    	color: #f2f2f2;
-    }
-    
-    &:not(:first-child) {
-	    padding-top: 30px;
-    }
+	a {
+		color: $color-off;
+		display: inline-block;
+	    padding: 10px;
+	    border-bottom: solid $color-black 2px;
+		&:hover {
+		    border-color: $color-main;
+		}
+		&.active {
+			color: $color-main;
+			font-weight: 600;
+    		font-size: 14px;
+		}
 
-
-    @media (min-width: 992px) {
-		padding: 30px 50px 30px 15px;
-
-	    &:not(:first-child) {
-	    	padding: 30px 50px;
-	    }
+		i {
+			margin-right: 2px;
+		}
 	}
 }
 
+// === Header: menu === //
+header .navbar {
+	background-color: $color-off !important;
+	@at-root {
+		body.scrolled header .navbar {
+			background-color: rgba($color-off, .95) !important;
+		}
+	}
+
+	.nav-item {
+		padding: 0 20px;
+	}
+
+	.nav-link {
+		&.active span {
+			font-weight: $font-weight-bold;
+			&:after {
+				width: 0;
+			}
+		}
+		&:not(.active):hover span:after {
+		    width: 100%;
+		    border-color: $color-black;
+		    left: 0;
+			transition: all ease .3s;
+		}
+
+		span {
+		    background-color: $color-off;
+			position: relative;
+			padding: 5px;
+		    z-index: 0;
+			&:after {
+		    	border: solid $color-off 1px;
+				content: "";
+				transition: all ease .3s;
+				position: absolute;
+				bottom: 0;
+				left: 50%;
+				width: 0;
+				top: -1px;
+			    z-index: -1;
+		        height: 108%;
+			}
+		}
+	}
+}
+
+// === Main content === //
 main {
-	margin-top: 85px;
+	margin-top: 92px;
 
 	@media (min-width: 992px) {
-		margin-top: 183px;
+		margin-top: 176px;
 	}
 
 }
 
-/*
-.primaryBox {
-	background-color: #6B503F;
-}
+// === Footer === //
+footer  {
+    background-color: $color-black;
 
-.secondaryBox {
-	background-color: #4F1510;
-}*/
-
-@media (min-width: 1200px) {
-	.container-6 {
-		width: 100%;
-	    max-width: 570px;
-	    margin-right: 0;
-	    margin-left: auto;
-	    padding-right: 15px;
-    	padding-left: 15px;
-
-    	&.right {
-		    margin-right: auto;
-		    margin-left: 0;
-    	}
-	}
+    * {
+    	color: $color-off !important;
+    }
 }
