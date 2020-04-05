@@ -1,9 +1,15 @@
 /// Block to contain any kind of content on the website, with needed spacing
 .content {
+    width: 100%;
+
     &--bgcolor {
         padding: 30px 50px;
 		background-color: $color-second;
     	color: $color-off;
+
+    	&:before {
+    		content: "";
+    	}
     }
     
     @media (min-width: 992px) {
@@ -37,5 +43,26 @@
 
 	p {
 		margin: 5px 0;
+	}
+}
+
+.profile {
+    margin: 20px 0;
+    padding: 0 50px;
+    text-align: center;
+
+    &__name {
+    	margin: 20px 0;
+	    font-weight: $font-weight-bold;
+    }
+
+	img {
+		border-radius: 100%;
+		filter: grayscale(1);
+		transition: filter ease .3s;
+
+		&:hover {
+			filter: grayscale(0);
+		}
 	}
 }

@@ -17,9 +17,17 @@ en:
     Reservation information: Reservation information
     Tell us if you have any food intolerance o any other needs you may have: Tell us if you have any food intolerance o any other needs you may have
     We'll never share your email with anyone else.: We'll never share your email with anyone else.
+    We are proud of our product, but even more of our excellent team: We are proud of our product, but even more of our excellent team
     We will send the details of your reservation by mail: We will send the details of your reservation by mail
     What do you need?: What do you need?
     Your email was sent successfully: Your email was sent successfully
+    Do you have any question? Or some sugestion? Our team will help you with every you need: Do you have any question? Or some sugestion? Our team will help you with every you need
+    address: Address
+    schedule: Opening hours
+    phone: Phone
+    Contact information: Contact information
+    Congratulations! Your reservation was succesfully made: Congratulations! Your reservation was succesfully made
+    hour: Hour
 
 ca:
     contact: Contacta
@@ -38,16 +46,24 @@ ca:
     Make reservation: Fer reserva
     Reservation confirmation: Confirmació de reserva
     Reservation information: Dades de la reserva
-    Tell us if you have any food intolerance o any other needs you may have: Tell us if you have any food intolerance o any other needs you may have
+    Tell us if you have any food intolerance o any other needs you may have: Diga'ns si tens alguna intolerància alimentària o alguna altra necessitat que haguemw de saber
     We'll never share your email with anyone else.: Mai compartirem el correu electrònic amb ningú més.
+    We are proud of our product, but even more of our excellent team: Estem orgullosos del nostre producte, però encara més del nostre equip excel·lent
     We will send the details of your reservation by mail: Enviarem les dades de la teva reserva per correu
     What do you need?: Què necessites?
-    Your email was sent successfully: El vostre correu electrònic s'ha enviat correctament
+    Your email was sent successfully: El teu correu electrònic s'ha enviat correctament
+    Do you have any question? Or some sugestion? Our team will help you with every you need: Tens algún dubte? Alguna suggerència? El nostre equip s'encarregarà d'ajudar-te amb el que necessitis
+    address: Direcció
+    schedule: Horari
+    phone: Telèfon
+    Contact information: Informació de contacte
+    Congratulations! Your reservation was succesfully made: Felicitats! La teva reserva s'ha realitzat correctament
+    hour: Hora
 
 es:
     contact: Contacta
-    date: Date
-    diners: Diners
+    date: Fecha
+    diners: Comensales
     email: Email
     information: Información
     menu: La carta
@@ -57,12 +73,20 @@ es:
     restaurant: El restaurante
     send: Enviar
     team: El equipo
-    Be it a birthday or a romantic date, in Nogura you will find the right space for your needs: Be it a birthday or a romantic date, in Nogura you will find the right space for your needs
-    Make reservation: Make reservation
-    Reservation confirmation: Reservation confirmation
-    Reservation information: Reservation information
-    Tell us if you have any food intolerance o any other needs you may have: Tell us if you have any food intolerance o any other needs you may have
-    We'll never share your email with anyone else.: Nunca compartiremos su correo electrónico con nadie más.
-    We will send the details of your reservation by mail: We will send the details of your reservation by mail
+    Be it a birthday or a romantic date, in Nogura you will find the right space for your needs: Ya sea un aniversario o una cita romántica, en Nogura encontrarás el espacio adequado para tus necesidades.
+    Make reservation: Hacer reserva
+    Reservation confirmation: Confirmación de reserva
+    Reservation information: Información de la reserva
+    Tell us if you have any food intolerance o any other needs you may have: Dinos si tienes alguna intolerancia alimenticia o alguna otra necesidad que debamos saber
+    We'll never share your email with anyone else.: Nunca compartiremos tu correo electrónico con nadie más.
+    We are proud of our product, but even more of our excellent team: Estamos orgullosos de nuestro producto, pero aun más de nuestro equipo excelente
+    We will send the details of your reservation by mail: Enviaremos los detalles de tu reserva por correo
     What do you need?: ¿Qué necesitas?
     Your email was sent successfully: Tu correo electrónico fue enviado con éxito
+    Do you have any question? Or some sugestion? Our team will help you with every you need: ¿Tienes alguna duda? ¿Alguna sugerencia? Nuestro equipo se encargará de ayudarte con lo que necesites
+    address: Dirección
+    schedule: Horario
+    phone: Teléfono
+    Contact information: Información de contacto
+    Congratulations! Your reservation was succesfully made: ¡Felicidades! Tu reserva ha sido realizada correctamente
+    hour: Hora

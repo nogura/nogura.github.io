@@ -12,6 +12,7 @@ url: "" # the base hostname & protocol for your site, e.g. http://example.com
 information:
   address: Carrer del Rosselló, 154, Barcelona
   phone: 93 808 55 55
+  schedule: De dimarts a dissabte, de 13:00 a 16:00 i de 20:00 a 00:00
 
 # Social
 social:

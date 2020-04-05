@@ -67,7 +67,9 @@ label {
 	&:active,
 	&:focus,
 	&:hover {
-		background-color: darken($color-third, 5%);
+		background-color: darken($color-third, 5%) !important;
+		box-shadow: none;
+		border: 0;
 	}
 }
 
