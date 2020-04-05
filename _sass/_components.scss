@@ -6,10 +6,6 @@
         padding: 30px 50px;
 		background-color: $color-second;
     	color: $color-off;
-
-    	&:before {
-    		content: "";
-    	}
     }
     
     @media (min-width: 992px) {

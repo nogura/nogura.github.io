@@ -73,6 +73,23 @@ label {
 	}
 }
 
+.btn-secondary {
+    background-color: $color-off;
+    border-radius: 0;
+    border-color: $color-third;
+    color: $color-third;
+    font-weight: 500;
+    border-width: 2px;
+
+	&:active,
+	&:focus,
+	&:hover {
+		background-color: $color-third !important;
+		box-shadow: none;
+    	border-color: $color-third;
+	}
+}
+
 .form-control {
     background-color: $color-off;
     border: 0;
