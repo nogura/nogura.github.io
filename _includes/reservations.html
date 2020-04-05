@@ -81,7 +81,7 @@
 				<p class="text-center reserva__title"><strong>{{ site.data.i18n.[page.lang].["Reservation confirmation"] }}</strong></p>
     			<div class="row align-items-center">
     				<div class="col-3">
-    					<img src="{{ BASE_PATH }}/assets/images/logo.png" class="img-fluid d-none d-lg-block" width="80" alt="Nogura logo"/>
+    					<img src="{{ BASE_PATH }}/assets/images/logo.png" class="img-fluid" width="80" alt="Nogura logo"/>
     				</div>
     				<div class="col-9">
     					<div class="row">
@@ -142,8 +142,15 @@
 			let targetField = $(".reserva .reserva__info[data-reservation='"+$(this).data("reservation")+"']");
 			let newValue = "";
 			$.each($(".form-control[data-reservation='" +$(this).data("reservation")+ "']"), function(key) {
-				if ($(this).val() != null) {
-					newValue += $(this).val() + " ";
+				let thisValue = $(this).val();
+
+				if (thisValue != null) {
+					if ($(this).data("reservation") == "date" && thisValue.indexOf("-") != -1) {
+						thisValue = thisValue.split("-");
+						thisValue = thisValue[2] +"-"+ thisValue[1] +"-"+ thisValue[0];
+					}
+
+					newValue += thisValue + " ";
 				}
 			});
 
