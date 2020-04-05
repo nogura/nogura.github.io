@@ -6,68 +6,66 @@
 <hr/>
 
 <div class="col-lg-6"> 
-	<div class="row">
-		<div class="content content--bgcolor">
-			<h2 class="text-center">{{ site.data.i18n.[page.lang].["Reservation information"] }}</h2>
-	
-			<form id="reservationForm">
-				<div class="form-group">
-					<label for="reservationName">{{ site.data.i18n.[page.lang].name }}</label>
-					<input type="text" class="form-control" id="reservationName" name="reservationName" data-reservation="name">
-				</div>
-				<div class="form-group">
-					<label for="reservationEmail">{{ site.data.i18n.[page.lang].email }}</label>
-					<input type="email" class="form-control" id="reservationEmail" aria-describedby="emailHelp" name="reservationEmail">
-					<small class="form-text text-muted">{{ site.data.i18n.[page.lang].["We'll never share your email with anyone else."] }}</small>
-				</div>
-				<div class="row">
-					<div class="form-group col">
-						<label for="reservationDate">{{ site.data.i18n.[page.lang].date }}</label>
-						<input type="date" class="form-control" id="reservationDate" name="reservationDate" data-reservation="date" min="2020-06-01" max="2021-07-31">
-					</div>
-					<div class="form-group col">
-						<label for="reservationHour">{{ site.data.i18n.[page.lang].hour }}</label>
-						<select class="custom-select form-control" data-reservation="date">
-							<option selected disabled>...</option>
-							<option value="13:00">13:00</option>
-							<option value="13:15">13:15</option>
-							<option value="13:30">13:30</option>
-							<option value="13:45">13:45</option>
-							<option value="14:00">14:00</option>
-							<option value="14:15">14:15</option>
-							<option value="14:30">14:30</option>
-							<option value="20:00">20:00</option>
-							<option value="20:15">20:15</option>
-							<option value="20:30">20:30</option>
-							<option value="20:45">20:45</option>
-							<option value="21:00">21:00</option>
-							<option value="21:15">21:15</option>
-							<option value="21:30">21:30</option>
-							<option value="21:45">21:45</option>
-							<option value="22:00">22:00</option>
-							<option value="22:15">22:15</option>
-							<option value="22:30">22:30</option>
-						</select>
-					</div>
-					<div class="form-group col">
-						<label for="reservationDiners">{{ site.data.i18n.[page.lang].diners }}</label>
-						<input type="number" class="form-control" id="reservationDiners" name="reservationDiners" data-reservation="diners">
-					</div>
-				</div>
-				<div class="form-group">
-					<label for="reservationMessage">{{ site.data.i18n.[page.lang].information }}</label>
-					<textarea class="form-control" id="reservationMessage" name="reservationMessage" rows="3"></textarea>
-					<small class="form-text text-muted">{{ site.data.i18n.[page.lang].["Tell us if you have any food intolerance o any other needs you may have"] }}</small>
-				</div>
-				<div class="form-group">
-					<button type="submit" class="btn btn-primary">{{ site.data.i18n.[page.lang].["Make reservation"] }}</button>
-				</div>
-			</form>
-		</div>
+	<div class="content content--bgcolor">
+		<h2 class="text-center">{{ site.data.i18n.[page.lang].["Reservation information"] }}</h2>
 
-		<div class="alert alert-success" role="alert" style="display: none;">
-		 	{{ site.data.i18n.[page.lang].["Congratulations! Your reservation was succesfully made"] }}
-		</div>
+		<form id="reservationForm">
+			<div class="form-group">
+				<label for="reservationName">{{ site.data.i18n.[page.lang].name }}</label>
+				<input type="text" class="form-control" id="reservationName" name="reservationName" data-reservation="name">
+			</div>
+			<div class="form-group">
+				<label for="reservationEmail">{{ site.data.i18n.[page.lang].email }}</label>
+				<input type="email" class="form-control" id="reservationEmail" aria-describedby="emailHelp" name="reservationEmail">
+				<small class="form-text text-muted">{{ site.data.i18n.[page.lang].["We'll never share your email with anyone else."] }}</small>
+			</div>
+			<div class="row">
+				<div class="form-group col">
+					<label for="reservationDate">{{ site.data.i18n.[page.lang].date }}</label>
+					<input type="date" class="form-control" id="reservationDate" name="reservationDate" data-reservation="date" min="2020-06-01" max="2021-07-31">
+				</div>
+				<div class="form-group col">
+					<label for="reservationHour">{{ site.data.i18n.[page.lang].hour }}</label>
+					<select class="custom-select form-control" data-reservation="date">
+						<option selected disabled>...</option>
+						<option value="13:00">13:00</option>
+						<option value="13:15">13:15</option>
+						<option value="13:30">13:30</option>
+						<option value="13:45">13:45</option>
+						<option value="14:00">14:00</option>
+						<option value="14:15">14:15</option>
+						<option value="14:30">14:30</option>
+						<option value="20:00">20:00</option>
+						<option value="20:15">20:15</option>
+						<option value="20:30">20:30</option>
+						<option value="20:45">20:45</option>
+						<option value="21:00">21:00</option>
+						<option value="21:15">21:15</option>
+						<option value="21:30">21:30</option>
+						<option value="21:45">21:45</option>
+						<option value="22:00">22:00</option>
+						<option value="22:15">22:15</option>
+						<option value="22:30">22:30</option>
+					</select>
+				</div>
+				<div class="form-group col">
+					<label for="reservationDiners">{{ site.data.i18n.[page.lang].diners }}</label>
+					<input type="number" class="form-control" id="reservationDiners" name="reservationDiners" data-reservation="diners">
+				</div>
+			</div>
+			<div class="form-group">
+				<label for="reservationMessage">{{ site.data.i18n.[page.lang].information }}</label>
+				<textarea class="form-control" id="reservationMessage" name="reservationMessage" rows="3"></textarea>
+				<small class="form-text text-muted">{{ site.data.i18n.[page.lang].["Tell us if you have any food intolerance o any other needs you may have"] }}</small>
+			</div>
+			<div class="form-group">
+				<button type="submit" class="btn btn-primary">{{ site.data.i18n.[page.lang].["Make reservation"] }}</button>
+			</div>
+		</form>
+	</div>
+
+	<div class="alert alert-success" role="alert" style="display: none;">
+	 	{{ site.data.i18n.[page.lang].["Congratulations! Your reservation was succesfully made"] }}
 	</div>
 </div>
 
