@@ -1,7 +1,6 @@
 /// Block to contain any kind of content on the website, with needed spacing
 .content {
     margin: 20px 0;
-    text-align: justify;
 
     &--bgcolor {
         padding: 30px 50px;
@@ -10,10 +9,11 @@
     }
     
     @media (min-width: 992px) {
-	    padding: 0 50px 30px 15px;
+	    padding-top: 30px;
+        padding-bottom: 30px;
 
         &--bgcolor {
-            padding: 30px 50px;
+            padding: 30px;
         }
 	}
 }
