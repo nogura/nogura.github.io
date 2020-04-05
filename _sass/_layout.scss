@@ -45,29 +45,31 @@ header .navbar {
 				width: 0;
 			}
 		}
+		&:not(.active):hover span:before,
 		&:not(.active):hover span:after {
 		    width: 100%;
-		    border-color: $color-black;
 		    left: 0;
 			transition: all ease .3s;
 		}
 
 		span {
-		    background-color: $color-off;
 			position: relative;
 			padding: 5px;
-		    z-index: 0;
+			&:before,
 			&:after {
-		    	border: solid $color-off 1px;
 				content: "";
+		    	background-color: $color-black;
 				transition: all ease .3s;
 				position: absolute;
-				bottom: 0;
+		        height: 1px;
+		        width: 0;
 				left: 50%;
-				width: 0;
-				top: -1px;
-			    z-index: -1;
-		        height: 108%;
+			}
+			&:before {
+				top: 0;
+			}
+			&:after {
+				bottom: 0;
 			}
 		}
 	}
