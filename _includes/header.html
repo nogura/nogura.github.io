@@ -1,8 +1,5 @@
 <header class="fixed-top">
-	<nav class="nav">
-		<!--<a href="https://www.google.com/maps/place/Carrer+del+Rossell%C3%B3,+154,+08036+Barcelona/@41.3911261,2.1526778,17z/data=!3m1!4b1!4m5!3m4!1s0x12a4a29000064df1:0x717a50f5aa13339f!8m2!3d41.3911261!4d2.1548665" target="_blank" class="nav-link"><i class="icon-location"></i>Carrer del Rosselló 154, Barcelona</a>
-	  	<a href="mailto:{{ site.email }}" class="nav-link"><i class="icon-mail"></i>{{ site.email }}</a>-->
-	  	
+	<nav class="nav">	  	
 	  	{% if site.social %}
 		  	<div class="col">
 				{% if site.social.facebook %}<a href="https://www.facebook.com/{{ site.social.facebook }}/" target="_blank" class="nav-link float-left"><i class="icon-facebook"></i></a>{% endif %}
@@ -24,7 +21,7 @@
 		<div class="container">
 			<a class="navbar-brand" href="/{{ page.lang }}">
 				<img src="{{ BASE_PATH }}/assets/images/logo.png" class="img-fluid d-none d-lg-block" width="80" alt="Nogura logo" />
-				<img src="{{ BASE_PATH }}/assets/images/logo_letters.png" class="img-fluid d-lg-none" height="30" alt="Nogura logo" />
+				<img src="{{ BASE_PATH }}/assets/images/logo_letters.png" class="img-fluid d-lg-none" width="100" alt="Nogura logo" />
 			</a>
 			<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#menu" aria-controls="menu" aria-expanded="false" aria-label="Toggle navigation">
 				<span class="navbar-toggler-icon"></span>

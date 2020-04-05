@@ -27,8 +27,21 @@ h1 {
 	color: $color-third;
     margin: 30px 0 20px;
 }
+h1 + p {
+	max-width: 100%;
+    width: 600px;
+    margin: 0 auto;
+}
 h2{
 	font-size: 28px;
+	margin-bottom: 20px;
+}
+
+hr {
+	border: solid transparent 1px;
+    height: initial;
+    width: 100%;
+    margin: 30px 0;
 }
 
 label {
@@ -38,6 +51,7 @@ label {
 .alert {
 	border: 0;
 	border-radius: 0;
+	margin-top: 30px;
 	width: 100%;
 }
 

@@ -9,6 +9,9 @@ ref: contact
 	<h1>{{ site.data.i18n.[page.lang].[page.ref] }}</h1>
 	<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do <br>eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam.</p>
 </div>
+
+<hr/>
+
 <div class="col-lg-6">
 	<div class="content">
 		<p>Benvingut! Moltes gràcies pel vostre interès pel nostre restaurant.</p>
@@ -18,14 +21,17 @@ ref: contact
 
 {% include contact__form.html %}
 
+<hr/>
+
 <div class="col-lg-6 content">
 	<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2993.2155028018747!2d2.1526778152898003!3d41.391126079263906!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x12a4a29000064df1%3A0x717a50f5aa13339f!2sCarrer%20del%20Rossell%C3%B3%2C%20154%2C%2008036%20Barcelona!5e0!3m2!1ses!2ses!4v1586038319535!5m2!1ses!2ses" width="100%" height="300" frameborder="0" style="border:0;" allowfullscreen="" aria-hidden="false" tabindex="0"></iframe>
 </div>
+
 <div class="col-lg-6">
 	<div class="content">
 		<h2>Informació de contacte</h2>
-		<p><strong>Adreça</strong>: Carrer del Rosselló, 154, Barcelona</p>
+		<p><strong>Adreça</strong>: {{ site.information.address }}</p>
 		<p><strong>Horari</strong>: De dimarts a dissabtes, de 13:00 a 23:00</p>
-		<p><strong>Telèfon</strong>: 93 808 55 55</p>
+		<p><strong>Telèfon</strong>: {{ site.information.phone }}</p>
 		</div>
 </div>

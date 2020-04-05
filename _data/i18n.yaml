@@ -1,6 +1,9 @@
 en:
     contact: Contact
+    date: Date
+    diners: Diners
     email: Email
+    information: Information
     menu: The menu
     message: Message
     name: Name
@@ -8,13 +11,22 @@ en:
     restaurant: The restaurant
     send: Send
     team: The team
+    Be it a birthday or a romantic date, in Nogura you will find the right space for your needs: Be it a birthday or a romantic date, in Nogura you will find the right space for your needs
+    Make reservation: Make reservation
+    Reservation confirmation: Reservation confirmation
+    Reservation information: Reservation information
+    Tell us if you have any food intolerance o any other needs you may have: Tell us if you have any food intolerance o any other needs you may have
     We'll never share your email with anyone else.: We'll never share your email with anyone else.
+    We will send the details of your reservation by mail: We will send the details of your reservation by mail
     What do you need?: What do you need?
     Your email was sent successfully: Your email was sent successfully
 
 ca:
     contact: Contacta
+    date: Data
+    diners: Comensals
     email: Email
+    information: Informació
     menu: La carta
     message: Missatge
     name: Nom
@@ -22,13 +34,22 @@ ca:
     restaurant: El restaurant
     send: Enviar
     team: L'equip
+    Be it a birthday or a romantic date, in Nogura you will find the right space for your needs: Ja sigui un aniversari o una cita romàntica, a Nogura trobaràs l'espai adequat a les teves necessitats.
+    Make reservation: Fer reserva
+    Reservation confirmation: Confirmació de reserva
+    Reservation information: Dades de la reserva
+    Tell us if you have any food intolerance o any other needs you may have: Tell us if you have any food intolerance o any other needs you may have
     We'll never share your email with anyone else.: Mai compartirem el correu electrònic amb ningú més.
+    We will send the details of your reservation by mail: Enviarem les dades de la teva reserva per correu
     What do you need?: Què necessites?
     Your email was sent successfully: El vostre correu electrònic s'ha enviat correctament
 
 es:
     contact: Contacta
+    date: Date
+    diners: Diners
     email: Email
+    information: Información
     menu: La carta
     message: Mensaje
     name: Nombre
@@ -36,6 +57,12 @@ es:
     restaurant: El restaurante
     send: Enviar
     team: El equipo
+    Be it a birthday or a romantic date, in Nogura you will find the right space for your needs: Be it a birthday or a romantic date, in Nogura you will find the right space for your needs
+    Make reservation: Make reservation
+    Reservation confirmation: Reservation confirmation
+    Reservation information: Reservation information
+    Tell us if you have any food intolerance o any other needs you may have: Tell us if you have any food intolerance o any other needs you may have
     We'll never share your email with anyone else.: Nunca compartiremos su correo electrónico con nadie más.
+    We will send the details of your reservation by mail: We will send the details of your reservation by mail
     What do you need?: ¿Qué necesitas?
     Your email was sent successfully: Tu correo electrónico fue enviado con éxito
