@@ -29,8 +29,10 @@ header .nav  {
 header .navbar {
 	background-color: $color-off !important;
 	@at-root {
-		body.scrolled header .navbar {
-			background-color: rgba($color-off, .95) !important;
+		@media (min-width: 992px) {
+			body.scrolled header .navbar {
+				background-color: rgba($color-off, .95) !important;
+			}
 		}
 	}
 

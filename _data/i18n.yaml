@@ -28,6 +28,9 @@ en:
     Contact information: Contact information
     Congratulations! Your reservation was succesfully made: Congratulations! Your reservation was succesfully made
     hour: Hour
+    To reserve a table in our restaurant it is necessary to accept the conditions and the cancellation policy.: To reserve a table in our restaurant it is necessary to accept the conditions and the cancellation policy.
+    Once the date has been selected, the procedure for managing the reservation requires a prepayment of 10€ per diner, which will be deducted from the final invoice on the day of your visit.: Once the date has been selected, the procedure for managing the reservation requires a prepayment of 10€ per diner, which will be deducted from the final invoice on the day of your visit.
+    To modify or cancel your reservation, you must notify us at least 24 hours in advance. The modification will be made according to availability. The refund for cancellation will be made provided that it has been notified with a minimum of 24 hours prior to the reservation. The amount paid is not transferable to other reservations.: To modify or cancel your reservation, you must notify us at least 24 hours in advance. The modification will be made according to availability. The refund for cancellation will be made provided that it has been notified with a minimum of 24 hours prior to the reservation. The amount paid is not transferable to other reservations.
 
 ca:
     contact: Contacta
@@ -59,6 +62,9 @@ ca:
     Contact information: Informació de contacte
     Congratulations! Your reservation was succesfully made: Felicitats! La teva reserva s'ha realitzat correctament
     hour: Hora
+    To reserve a table in our restaurant it is necessary to accept the conditions and the cancellation policy.: Per reservar una taula al nostre restaurant cal acceptar les condicions i la política de cancel·lació.
+    Once the date has been selected, the procedure for managing the reservation requires a prepayment of 10€ per diner, which will be deducted from the final invoice on the day of your visit.: El procediment per gestionar la reserva, un cop seleccionada la data, requereix realitzar un prepagament de 10 € per comensal que seran descomptats de la factura final el dia de la seva visita.
+    To modify or cancel your reservation, you must notify us at least 24 hours in advance. The modification will be made according to availability. The refund for cancellation will be made provided that it has been notified with a minimum of 24 hours prior to the reservation. The amount paid is not transferable to other reservations.: Per modificar o cancel·lar la reserva cal que ens avisi amb un mínim de 24 hores d'antelació. La modificació s'efectuarà segons disponibilitat. La devolució de l'import per cancel·lació es farà sempre que s'hagi notificat amb un mínim de 24 hores d'antelació a la reserva. L'import abonat és intransferible a altres reserves.
 
 es:
     contact: Contacta
@@ -90,3 +96,6 @@ es:
     Contact information: Información de contacto
     Congratulations! Your reservation was succesfully made: ¡Felicidades! Tu reserva ha sido realizada correctamente
     hour: Hora
+    To reserve a table in our restaurant it is necessary to accept the conditions and the cancellation policy.: Para reservar una mesa en nuestro restaurante es necesario aceptar las condiciones y la política de cancelación.
+    Once the date has been selected, the procedure for managing the reservation requires a prepayment of 10€ per diner, which will be deducted from the final invoice on the day of your visit.: El procedimiento para gestionar la reserva, una vez seleccionada la fecha, requiere realizar un prepago de 10€ por comensal que serán descontados de la factura final el día de su visita.
+    To modify or cancel your reservation, you must notify us at least 24 hours in advance. The modification will be made according to availability. The refund for cancellation will be made provided that it has been notified with a minimum of 24 hours prior to the reservation. The amount paid is not transferable to other reservations.: Para modificar o anular su reserva es necesario que nos avise con un mínimo de 24 horas de antelación. La modificación se efectuará según disponibilidad. La devolución del importe por cancelación se hará siempre que se haya notificado con un mínimo de 24 horas de antelación a la reserva. El importe abonado es intransferible a otras reservas.
