@@ -47,6 +47,10 @@
     padding: 0 50px;
     text-align: center;
 
+    &:after {
+    	content: "";
+    }
+
     &__name {
     	margin: 20px 0;
 	    font-weight: $font-weight-bold;
@@ -59,6 +63,41 @@
 
 		&:hover {
 			filter: grayscale(0);
+		}
+	}
+}
+
+.title_bgimage {
+	position: relative;
+	padding: 30px 0;
+
+	&:before {
+		background-repeat: no-repeat;
+		background-size: 100% auto;
+		content: "";
+		height: 100%;
+	    width: 100%;
+	    opacity: 0.3;
+	    position: absolute;
+	    top: 0;
+	    left: 0;
+	    z-index: -1;
+	}
+	&--missio:before {
+		background-image: url('/assets/images/restaurant/restaurant__missio.jpg');
+	}
+	&--visio:before {
+		background-image: url('/assets/images/restaurant/restaurant__visio.jpg');
+	}
+	&--valors:before {
+		background-image: url('/assets/images/restaurant/restaurant__valors.jpg');
+	}
+
+	@media (min-width: 992px) {
+		padding: 0;
+		
+		&:before {
+			display: none;
 		}
 	}
 }
