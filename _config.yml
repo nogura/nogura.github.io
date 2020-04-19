@@ -10,9 +10,15 @@ baseurl: "" # the subpath of your site, e.g. /blog
 url: "" # the base hostname & protocol for your site, e.g. http://example.com
 
 information:
-  address: Carrer del Rosselló, 154, Barcelona
+  address: 
+    en: Rosselló street, 154, Barcelona
+    ca: Carrer del Rosselló, 154, Barcelona
+    es: Calle del Rosselló, 154, Barcelona
   phone: 93 808 55 55
-  schedule: De dimarts a dissabte, de 13:00 a 16:00 i de 20:00 a 00:00
+  schedule:
+    en: From tuesday to saturday, from 13:00 to 16:00 and from 20:00 to 00:00
+    ca: De dimarts a dissabte, de 13:00 a 16:00 i de 20:00 a 00:00
+    es: De martes a sábado, de 13:00 a 16:00 y de 20:00 a 00:00
 
 # Social
 social:
